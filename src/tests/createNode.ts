@@ -1,6 +1,6 @@
 import { createTextNode } from "../render";
 import { expect, test } from 'vitest'
-import { DOM_TYPES } from "../types";
+import { DOM_TYPES } from "../types/types";
 
 // @vitest-environment happy-dom
 
