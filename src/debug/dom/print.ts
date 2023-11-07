@@ -1,4 +1,8 @@
-function prettyPrintDOMNode(node: Node): void {
+export function printNodeValue(node: Node): void {
+    console.log(node.nodeValue);
+}
+
+export function prettyPrintDOMNode(node: Node): void {
     const serializer = new XMLSerializer();
     const xmlStr = serializer.serializeToString(node);
     const formattedStr = formatXML(xmlStr);
