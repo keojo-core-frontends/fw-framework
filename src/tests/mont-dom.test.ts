@@ -55,7 +55,7 @@ describe("mounting DOM", () => {
     } as virtualElementNode;
     mountDOM({ vdom, parentElement });
     expect(parentElement.childNodes.length).toBe(1);
-    expect((parentElement.firstChild as Element)).toBe("DIV");
+    expect((parentElement.firstChild as Element).tagName).toBe("DIV");
     expect(parentElement.firstChild.textContent).toBe("Hello, world!");
   });
 
